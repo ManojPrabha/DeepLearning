@@ -16,7 +16,6 @@ from tensorflow import keras
 #Assign Optimizer and Loss functions to assess the Guess and improve the assumption
 model.compile(optimizer='sgd', loss='mean_squared_error')
 
-
 #Fit the model with number epochs, the number of times it executes, it gets better eventually
 model.fit(x, y, epoch=500)
 
