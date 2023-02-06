@@ -7,7 +7,9 @@ Basic structure of Deep Learning model with a single neuron, this can find the r
 # Neural Network TensorFlow
 ## Import Libraries 
 import tensorflow as tf
+
 import numpy as np
+
 from tensorflow import keras
 
 ## Create a single neuron Network
