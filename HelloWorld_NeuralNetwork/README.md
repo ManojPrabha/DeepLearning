@@ -5,19 +5,19 @@ Basic structure of Deep Learning model with a single neuron, this can find the r
 
 
 # Neural Network TensorFlow
-#Import Libraries 
+## Import Libraries 
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
 
-#Create a single neuron Network
+## Create a single neuron Network
  model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])
  
-#Assign Optimizer and Loss functions to assess the Guess and improve the assumption
+## Assign Optimizer and Loss functions to assess the Guess and improve the assumption
 model.compile(optimizer='sgd', loss='mean_squared_error')
 
-#Fit the model with number epochs, the number of times it executes, it gets better eventually
+## Fit the model with number epochs, the number of times it executes, it gets better eventually
 model.fit(x, y, epoch=500)
 
-#Finally check prediction
+## Finally check prediction
 model.predict([10])
